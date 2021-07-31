@@ -1,0 +1,18 @@
+
+
+[source]
+foo.deb
+|_ control.tar.gz
+   |_ changelog
+   |_ control
+   |_ postinst
+   \_ preinst
+|_ data.tar.gz
+   \_ modules.cgz
+\_ debian-binary
+
+compress everything back
+tar -czvf control.tar.gz ./changelog ./control ./postinst ./preinst
+
+recreate a deb package
+ar -r aacraid-1.1.7-28700-Debian6.0-all.deb ./control.tar.gz ./data.tar.gz ./debian-binary

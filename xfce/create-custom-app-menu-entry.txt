@@ -1,0 +1,14 @@
+Make a .desktop file.
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=WebStorm
+Exec=/home/user/app/webstorm/bin/webstorm.sh
+Icon=/home/user/app/webstorm/bin/webstorm.svg
+Categories=Development
+
+
+Place it in:
+/usr/share/applications  (affects all users)
+[your-home]/.local/share/applications (affects chosen user)
