@@ -27,12 +27,12 @@ owner can rwx, group can r-x, others can r-x
 rwxr-xr-x 
 755
 
-ls -l <file>
+ls -l 'file'
 drwxr-xr-x  5 user user   4096 Jun 26 23:22  ws
-||||||||||- rwx permission of 'others', '-' if missing 
-|||||||---- rwx permission of 'group' , '-' if missing
-||||------- rwx permission of 'owner' , '-' if missing
-|---------- 'd' if dir, '-' if file
+#|||||||||- rwx permission of 'others', '-' if missing
+#||||||---- rwx permission of 'group' , '-' if missing
+#|||------- rwx permission of 'owner' , '-' if missing
+#---------- 'd' if dir, '-' if file
 
 
 chmod u+x hello.sh		# allows to modify single permission
@@ -48,13 +48,13 @@ useradd -m -d /foo			# '-m' create hoem dir in /foou
 useradd -s /bin/bash			# specify the user's default shell
 useradd -c 'foo'			# extra info about the user
 
-userdel <name>				# delete user
-groupdel <name>
+userdel 'name'				# delete user
+groupdel 'name'
 
 
 adduser					# perl script using 'useradd'
-addgroup --gid <ID> <group>		# create group, force gid=ID
-adduser <user> <group>			# add user to group			
+addgroup --gid 'ID' 'group'		# create group, force gid=ID
+adduser 'user' 'group'			# add user to group			
 
 # switch from user1 to user2 with GUI
 xhost +					# allow access to others, to be run in shell of user1

@@ -1,0 +1,16 @@
+
+
+* HYPERVISOR
+    * soft-, firm- or hardware that creates and runs vms
+* type 1
+    * navtive, bare-metal	
+    * runs directly on host's hardware.
+    * Xen, Oracle VM Server, Microsoft Hyper-V, VMware ESX(i))
+* type 2
+    * hosted
+    * on os
+    * VMware Workstation, VirtualBox
+* hybrid
+    * modules, convert host into type 1, 
+    * but compete with resources with host.
+    * (KVM)

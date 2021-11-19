@@ -2,6 +2,8 @@
 
 #### Get CUDA
 
+https://docs.nvidia.com/cuda/cuda-installation-guide-linux/
+
 [source,bash]
 apt-get update &&
 apt-get install software-properties-common &&

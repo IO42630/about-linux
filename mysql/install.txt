@@ -1,0 +1,25 @@
+
+# install
+$ apt-get install mysql-server
+
+# test if running
+$ netstat -tap | grep mysql
+> tcp        0      0 localhost.localdo:mysql *:*        LISTEN      13059/mysqld
+  
+# if needed restart
+$ /etc/init.d/mysql restart
+
+# login 
+$ mysql -u root -p
+ 
+# created db
+$ create database databasename;
+ 
+# use db
+$ use databasename;
+
+#
+show databases;
+
+#
+drop database "name";
