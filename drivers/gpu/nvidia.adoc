@@ -1,0 +1,12 @@
+
+
+#### Get CUDA
+
+[source,bash]
+apt-get update &&
+apt-get install software-properties-common &&
+apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/debian11/x86_64/7fa2af80.pub &&
+add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/debian11/x86_64/ /" &&
+add-apt-repository contrib &&
+apt-get update &&
+apt-get -y install cuda
