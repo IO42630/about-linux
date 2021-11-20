@@ -1,4 +1,4 @@
-add `/home/user/.local/share/applications/idea.desktop`
+Add `/home/user/.local/share/applications/idea.desktop`
 with:
 
     [Desktop Entry]
@@ -9,3 +9,5 @@ with:
     Exec="/home/user/app/idea/bin/idea.sh" %f
     Categories=Development;IDE;
     Terminal=false
+
+Alternatively place in `/usr/share/applications` to show for all users.
