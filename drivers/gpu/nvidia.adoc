@@ -12,3 +12,17 @@ add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos
 add-apt-repository contrib &&
 apt-get update &&
 apt-get -y install cuda
+
+* get the SDK
+
+* do the ffmpeg stuff
+
+[source,bash]
+#
+# add to repos deb http://www.deb-multimedia.org buster main
+apt-get update -oAcquire::AllowInsecureRepositories=true
+apt-get install deb-multimedia-keyring
+apt-get install libzimg-dev
+#
+# finally
+debuild -us -uc -b
