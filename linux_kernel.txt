@@ -1,0 +1,12 @@
+Ctrl+Alt+F2 // goto CLI
+
+systemctl isolate multi-user.target
+modprobe -r nvidia-drm
+systemctl start graphical.target
+sudo apt-get purge nvidia*
+sudo apt-get autoremove
+rmmod nvidia_drm
+rmmod nvidia_modeset
+rmmod nvidia
+tee /proc/acpi/bbswitch <<<OFF
+cat /proc/acpi/bbswitch

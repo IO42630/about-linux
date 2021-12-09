@@ -1,0 +1,1 @@
+## Notes about my own Config 
