@@ -55,7 +55,7 @@ find <dir> -name "*.tif" -size -160K -delete 	# delete all .tif files smaller th
 
 
 jmtpfs -l				# list android devices
-jmtpfs -device=2,10 /media/s4mini	# mound android device
+jmtpfs -device=1,29 /media/s4mini	# mound android device
 
 mount /dev/sda1 /media/foo
 

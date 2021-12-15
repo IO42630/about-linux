@@ -17,6 +17,13 @@ git config annex.thin true
 # edit .gitignore
 # edit .gitattributes
 git remote add pool "archive"
-git annex sync
+git annex sync --content
 git annex get .
 
+
+
+# mount sshfs in windows
+net use H: \\sshfs.r\user@192.168.1.122\media\home
+
+# Troubleshooting
+# broken links are fixe in a pre-commit hook, thus commiting helps sometimes
