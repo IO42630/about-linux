@@ -1,0 +1,13 @@
+
+home
+\_ app -> ignore, do not sync since systems are too different
+\_ collection
+    \_ movies -> not sync
+    \_ music  -> not sync
+\_ docs
+    \_ key -> backup of usb key
+    \_ career -> sync
+    \_ dropbox ->
+\_ proj -> sync
+\_ tmp -> ignore
+\_ ws -> ignore, syc via own vcs
