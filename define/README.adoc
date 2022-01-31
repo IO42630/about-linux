@@ -1,0 +1,62 @@
+= Notes about my own Config
+:toc:
+
+{empty} +
+
+=== File Systems
+
+Context/Intent: +
+We want one git-annex archive called `pool`. +
+Further we want >=2 limited copies called `home`. +
+Limited means that we exclude media content, and keep a limited version history.
+
+Generally we have:
+
+* Windows host system, referred to as Win.
+* A Linux VM, named `zeed`.
+
+{empty} +
+
+The Result are the following file systems:
+
+* `pool`
+** Win ReFS 2-way mirror across 8 HDDs, mounted on `P:\`
+**  10 `vdmk` (`P:\pool1\pool1.vdmk` to `P:\pool10\pool10.vdmk`)
+*** divided into 1000 scalable chunks of 2GB each
+**** thus eventually we will need 40 TB of storage to keep up.
+**** as of 01.02.22 we have 14 TB connected.
+** the `vdmk` are mounted as one `zfs` to `zeed` at `\pool`
+** `pool` serves as archive as not meant to be mounted to Win.
+
+{empty} +
+
+* `home` (@define)
+** 1 `vdmk` at `C:\Users\user\vms\zeed\media_home.vdmk`
+*** divided into 100 scalable chunks of 2GB each
+** the `vdmk` is mounted to `\media\home`
+** exposed to Win through `\\sshfs:r\user@192.168.1.122\media\home` at `H:\`
+
+{empty} +
+
+* `home` (@panda)
+** WIP
+** on notebook
+** meant to mirror home@define
+
+{empty} +
+
+=== Folder Structure
+
+[source]
+home
+\_ app -> ignore, do not sync since systems are too different
+\_ collection
+    \_ movies -> not sync
+    \_ music  -> not sync
+\_ docs
+    \_ key -> backup of usb key
+    \_ career -> sync
+    \_ dropbox ->
+\_ proj -> sync
+\_ tmp -> ignore
+\_ ws -> ignore, syc via own vcs
