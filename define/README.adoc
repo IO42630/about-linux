@@ -45,6 +45,12 @@ The Result are the following file systems:
 
 {empty} +
 
+* `share` (@define)
+** if we want to easily move some files between Win and `zeed` we can use `share`
+** mounted on `C:\Users\user\home\share` and `/media/share`
+
+{empty} +
+
 === Folder Structure
 
 [source]

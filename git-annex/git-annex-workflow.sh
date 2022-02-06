@@ -7,7 +7,7 @@ git annex init
 # edit .gitignore
 # edit .gitattributes
 git annex add
-git commit
+git commit -m "foo"
 
 # have a thin repo as mirror (of the newest file)
 git clone "target" .
