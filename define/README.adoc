@@ -24,7 +24,7 @@ The Result are the following file systems:
 **  10 `vdmk` (`P:\pool1\pool1.vdmk` to `P:\pool10\pool10.vdmk`)
 *** divided into 1000 scalable chunks of 2GB each
 **** thus eventually we will need 40 TB of storage to keep up.
-**** as of 01.02.22 we have 14 TB connected.
+**** as of 12.02.22 we have 18 TB connected, and 3.62 TB used.
 ** the `vdmk` are mounted as one `zfs` to `zeed` at `\pool`
 ** `pool` serves as archive as not meant to be mounted to Win.
 
@@ -51,14 +51,25 @@ The Result are the following file systems:
 
 {empty} +
 
+==== Exceptions
+The following data is excluded this "File System":
+
+* SMTP -> managed by Thunderbird
+* ~\app -> OS specific
+* ~\ws -> managed by Git
+
+
+{empty} +
+
 === Folder Structure
 
 [source]
-home
+C:\Users\user\home
 \_ app -> ignore, do not sync since systems are too different
 \_ collection
     \_ movies -> not sync
     \_ music  -> not sync
+    \_ wallpapers
 \_ docs
     \_ key -> backup of usb key
     \_ career -> sync

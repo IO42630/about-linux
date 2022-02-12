@@ -123,12 +123,10 @@ cp -R FaceTime.app ./clutter/
 sudo rm -Rf FaceTime.app/
 
 
-
-
-
-
-
-
+# Chaining / Multiple Commands -------------------------------------------------
+ls ; ls # ls then ls
+ls && ls # ls then ls only if first ls successful
+ls || ls # ls then ls only if first ls failed
 
 
 
