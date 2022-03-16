@@ -1,1 +1,0 @@
-xkbset bell sticky -twokey latchlock feedback led stickybeep
