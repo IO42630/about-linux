@@ -1,3 +1,4 @@
+#!/bin/sh
 
 cd /media/home
 git annex add . # 1. add the file (to thin repo)

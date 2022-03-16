@@ -1,4 +1,4 @@
-
+#!/bin/sh
 
 # have one default repo as archive
 git  init
