@@ -3,6 +3,18 @@
 
 {empty} +
 
+{empty} +
+
+=== Considerations
+* Win is needed for driver support of RAID and GPU.
+* Win is generally unstable and unreliable.
+* All files and data will be kept on VirtualBox / Linux.
+* Do not mount to Win.
+* All consumer activity will be done in Linux
+* All dev activity will happen in Win
+
+{empty} +
+
 === File Systems
 
 Context/Intent: +

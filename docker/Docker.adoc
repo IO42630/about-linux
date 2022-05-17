@@ -1,0 +1,19 @@
+= Docker
+
+
+* Dockerfile - config for image
+* Image
+* Container - running process
+
+
+=== Workflow
+* create docker image
+* push to _Docker Hub_
+* pull from engine
+    * in jelastic > docker engine > ssh
+    * `docker pull io42630/min-http-server-0.1`
+* run
+    * `docker run -d -p 8090:8090 io42630/min-http-server-0.1`
+
+=== Commands
+* `docker ps`

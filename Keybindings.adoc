@@ -1,0 +1,22 @@
+= Keybindings
+:toc:
+:toclevels:4
+
+
+=== General and WIN
+
+* layout : us international
+* ducky hardware mapping:
+** CAPS -> modifier
+** CAPS + i -> home
+** CAPS + a -> end
+* windows power tools
+* \ -> ` (assuming ch-de keyboard - this maps the right-most middle row key to `) +
+but the leftmost lower row key remains \)
+
+=== IDEA
+
+[cols="1,1,8"]
+|===
+| ALT | C | commit tool window.
+|===

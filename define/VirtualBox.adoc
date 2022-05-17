@@ -1,0 +1,10 @@
+=== Key Bindings
+
+|===
+| Host Key | Right Ctrl
+| Full Screen | Host + F
+| Popup | Host + ]
+| Preferences | Host + /
+| Scaled | Host + C
+| Seamless | Host + L
+|===

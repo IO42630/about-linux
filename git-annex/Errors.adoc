@@ -1,0 +1,10 @@
+
+
+=== Windows
+
+|===
+| error | solution
+
+| file does not exist | sync with content
+| file locked by unknown user | git annex unlock
+|===
