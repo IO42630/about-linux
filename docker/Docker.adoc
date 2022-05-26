@@ -8,7 +8,7 @@
 
 === Workflow
 * create docker image
-* push to _Docker Hub_
+* push to _Docker Hub_ (name must start with repo e.g. `io42630/...`)
 * pull from engine
     * in jelastic > docker engine > ssh
     * `docker pull io42630/min-http-server-0.1`
