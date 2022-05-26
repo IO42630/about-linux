@@ -4,6 +4,6 @@ image:mariadb_setup.png[]
 
 [cols="1,4"]
 |===
-| users | `root:hostpwd`
-|
+| users | `root:hostpwd` +
+`dummy:this-is-pwd`
 |===
