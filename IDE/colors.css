@@ -1,0 +1,12 @@
+
+
+
+.demo { font-family: 'JetBrains Mono', monospace; ; font-size: 32px  }
+
+.keyword { color: #1565C0 }
+.field { color: #9A1B72}
+.static-field  { color: #6A1B9A ; font-style: italic; }
+.string { color: #2E7D32 }
+
+.annotation { color: #6A1B9A }
+.comment { color: #505050 ; background: #F5F5F5 }
