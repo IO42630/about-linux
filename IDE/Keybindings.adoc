@@ -18,5 +18,18 @@ but the leftmost lower row key remains \)
 
 [cols="1,1,8"]
 |===
+3+| **Tool Window Ops**
 | ALT | C | commit tool window.
+| ALT | Q | project tool window.
+| ALT | G | git tool window.
+| ALT | \ | structure tool window.
+3+| **Line Ops**
+| ALT | Z | comment line.
+| ALT | E | delete line.
+3+| **Basic Ops**
+| ALT | F | find (file)
+| CTRL + SHIFT | F | find in files
+3+| **Special Context Ops**
+| ALT | E | (in project tool window) open in explorer.
+| ALT | M | (in pom.xml) reload maven project.
 |===
